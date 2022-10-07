@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b9ae0ee7d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../assets/css/utilities.css" />
+    <link rel="stylesheet" href="../assets/css/result.css" />
+    <title>Results</title>
+  </head>
+  <body>
+    <div class="score-container bg-dark">
+      <div class="vider-container">
+        <video
+          playsinline="true"
+          autoplay="true"
+          muted="true"
+          loop="true"
+          id="results-firworks"
+        >
+          <source  class="results-firworks"src="../assets/videos/fireworks-1.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="overlay">
+       
+        <div class="score-inner bg-light-yellow">
+          <div class="remarks-container">
+            <h1 class="text-yellow title"> Remarks</h1>
+          <p id="remarks"></p>
+          </div>
+          <p class="remarks">You have scored</p>
+          <h1 id="score"></h1>
+          <div class="buttons action-btn">
+            <button class="btn-left back-to-quiz">
+              <i class="fa-solid fa-arrow-rotate-right"></i>Play Again
+            </button>
+            <button class="btn-right home">
+              <i class="fa-solid fa-xmark"></i>Close Quiz
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/js/result.js"></script>
+  </body>
+</html>

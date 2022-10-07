@@ -1,0 +1,158 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 3rem  2rem;
+  }
+
+.quiz {
+  height: 55vh;
+  width: 50vw;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inner-container .next,
+.inner-container .prev {
+  font-size: 2rem;
+  padding: 0.1rem 1rem;
+  border-radius: 3rem;
+  width: 4rem;
+}
+
+.inner-container .next:hover,
+.inner-container .prev:hover {
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 0, 0.884);
+  color: #0a0a0a;
+}
+
+.quiz-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 3rem;
+  font-size: 2rem;
+  box-shadow: rgba(240, 216, 3, 0.979) 10px 10px,
+    rgba(240, 216, 3, 0.979) 20px 20px, rgba(240, 216, 3, 0.979) 30px 30px;
+  padding: 1rem 1.5rem;
+}
+
+.submit{
+    background-color: rgb(147, 179, 147);
+    padding: 0.5rem 1.5rem;
+    border: 0;
+    cursor: pointer;
+    width: 10rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.submit:hover{
+    background-color: rgb(30, 146, 30);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.custom-icon .dash {
+  margin-top: 3rem;
+  height: 0.5rem;
+  width: 3rem;
+  border-radius: 3rem;
+  background-color: white;
+}
+
+.custom-icon .circle {
+  margin-top: 0.5rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 3rem;
+  background-color: white;
+}
+.custom-icon.second-icon-tray {
+  margin-left: 3rem;
+}
+
+.custom-icon.second-icon-tray .circle {
+  margin-top: 0.5rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 3rem;
+  background-color: yellow;
+}
+
+.custom-icon.second-icon-tray .dash {
+  margin-top: 0.5rem;
+  height: 0.5rem;
+  width: 3rem;
+  border-radius: 3rem;
+  background-color: yellow;
+}
+.buttons.action form {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  bottom: 7rem;
+  gap: 25rem;
+}
+
+.buttons.action .switch {
+  position: relative;
+  display: inline-block;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 3rem;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 1.5s;
+  border-radius: 3rem;
+  background-color: #c4c4c4;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2.5rem;
+  width: 3.1rem;
+  background-color: #fff;
+  border-radius: 3rem;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:checked + .slider:before {
+  transform: translate(3.8rem);
+}
+
+.action-text {
+  position: absolute;
+  bottom: 4rem;
+  left: 2rem;
+}

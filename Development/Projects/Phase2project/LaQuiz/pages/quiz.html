@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b9ae0ee7d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../assets/css/utilities.css" />
+    <link rel="stylesheet" href="../assets/css/quiz.css" />
+
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="container bg-dark text-dark">
+      <div class="inner-container">
+        <div>
+          <i class="fa-solid fa-chevron-left text-white prev quiz-controls"></i>
+        </div>
+        <div class="quiz-container">
+          <div class="quiz quiz-top bg-white">
+            <p id="quiz"></p>
+          </div>
+          <div class="custom-icon first-icon-tray">
+            <div class="dash"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="custom-icon second-icon-tray">
+            <div class="dash"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-chevron-right text-white next quiz-controls"
+          ></i>
+        </div>
+      </div>
+      <div class="buttons action text-white">
+        <form action="">
+        <label class="switch">
+          <div class="action-text"><p>True</p></div>
+          <input
+            class="true answer-controls"
+            type="radio"
+            name="response"
+            id=""
+          />
+          <span class="slider"> </span>
+        </label>
+
+        <label class="switch">
+          <div class="action-text"><p>False</p></div>
+          <input
+            class="false answer-controls"
+            type="radio"
+            name="response"
+            id=""
+          />
+          <span class="slider"></span>
+        </label>
+      </form>
+      </div>
+    </div>
+    <script type="module" src="../assets/js/quiz.js"></script>
+  </body>
+</html>
